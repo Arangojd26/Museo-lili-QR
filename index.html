@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!-- Instascan -->
+    <script type="text/javascript" src="app/instascan.min.js"></script>
+
+    <!-- Estilos CSS -->
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Noto+Serif:400,700">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    
+
+    <title>Instascan</title>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <img src="assets/img/logo.png" class="logo" alt="Logo lili"> 
+            </div>
+        </div>
+         <!-- Boton Modal Cámara -->
+         <div class="row justify-content-center">
+             <div class="col-12 text-center">
+                
+                <button id="modalActivate" type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalPreview">
+                    Launch Demo
+                </button>
+             </div>
+            
+         </div>
+        
+        <!-- Modal Cámara-->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="modal fade right" id="exampleModalPreview" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+                    <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+                        <div class="modal-content-full-width modal-content ">
+                            <div class=" modal-header-full-width   modal-header text-center">
+                                <h5 class="modal-title w-100" id="exampleModalPreviewLabel">Escanea el código QR
+                                </h5>
+                                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                                    <span style="font-size: 1.3em;" aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="vid-border">
+                                    <video id="preview"></video>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ 
+
+
+        <!-- Modal  Video-->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="modal fade right" id="videoModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalPreviewLabel2" aria-hidden="true">
+                    <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+                        <div class="modal-content-full-width modal-content">
+                            <div class="modal-body">
+
+                    
+                                <div id="contenido">
+                                    
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="cerrarVideo">
+                                    <span class="fa-layers fa-fw">
+                                        <i class="fas fa-circle" style="color:rgb(231, 55, 24)"></i>
+                                        <i class="fa-inverse fas fa-times" data-fa-transform="shrink-6"></i>
+                                    </span>
+                                </button>
+        
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Modal  Video-->
+
+
+        
+        
+    </div>
+    
+
+    <script type="text/javascript" src="app/scripts.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
